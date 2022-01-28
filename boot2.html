@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap 2 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        .apartment :hover{
+            cursor: pointer;
+            background-color: darkgrey;
+        }
+        .myimg{
+            opacity: .50;
+        }
+        .myimg:hover{
+            opacity: 1.0;
+            cursor: pointer;
+        }
+        .first{
+            overflow: hidden;
+        }
+        .second{
+            z-index: 2;
+            position: relative;
+        }
+       
+
+        @media only screen and (max-width: 992px){
+            .second{
+                width: 100%;
+            }
+            .navbar{
+                visibility:visible;
+            }
+            .first{
+                display: none;
+            }
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-dark" >
+        <div class="container-fluid">
+          <a class="navbar-brand fs-5 " style="color: white;">Rental</a>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#first-col" id='showside' ></button>                     
+          </button>
+        </div>
+      </nav>
+    <div class="container bg-white mt-4 me-5 ">
+        
+        <div class='row'>
+            <!-- first column -->
+            <div class=' first col-3 bg-light' id="first-col" >
+                <h3> Rental</h3><br>
+                <h3> From $99 </h3><br>
+                <h4> Per Night</h4><br>
+                <form>
+                    <div class="col-auto">
+                    <img src="./Day2/access.png" alt="checkin" width="5%">
+                    <label class='col-form-label'> Check In </label>
+                    <input type="text" placeholder="DD/MM/YYYY" class='form-control'>
+                    </div><br>
+
+                    <div class="col-auto">
+                        <img src="./Day2/chkout.png" alt="checkout" width="5%">
+                        <label class='col-form-label'> Check Out </label>
+                        <input type="text" placeholder="DD/MM/YYYY" class='form-control'>
+                    </div><br>
+
+                    <div class="col-auto">
+                        <img src="./Day2/ad.png" alt="address" width="7%">
+                        <label class='col-form-label'> Adult </label>
+                        <input type="number" placeholder="1" class='form-control'>
+                    </div><br>
+
+                    <div class="col-auto">
+                        <img src="./Day2/kid.png" width="7%">
+                        <label class='col-form-label'> Kids </label>
+                        <input type="number" placeholder="1" class='form-control'>
+                    </div><br>
+
+                    <button type="button" class="btn btn-success"> Search Availability</button>
+                </form><br>
+            <div>
+                <div class='apartment m-4'>
+                    <img src="./Day2/ap.png" alt='apartment' width="7%">
+                    <span style="font-size: 20px;"> Apartment </span>
+                </div>
+                <div class='apartment m-4'>
+                    <img src="./Day2/sub.png" alt='apartment' width="7%">
+                    <span style="font-size: 20px;"> Subscribe </span>
+                </div>
+                <div class='apartment m-4'>
+                    <img src="./Day2/contact.png" alt='apartment' width="7%">
+                    <span style="font-size: 20px;"> Contact </span>
+                    <!-- <span > Contact </span> -->
+                </div>
+            </div>
+
+            </div>
+            <!-- second column -->
+            <div class='second col-6 '>
+                <h1> The Apartment</h1><br>
+                <div>
+                    <img src="https://www.w3schools.com/w3images/livingroom.jpg" class="img-responsive" width="100%" >
+                </div>
+                <div class="row mt-4">
+                    <div class="col-3 ">
+                        <img src="	https://www.w3schools.com/w3images/livingroom.jpg" class="myimg" width="100%" >
+                    </div>
+                    <div class="col-3 ">
+                        <img src="	https://www.w3schools.com/w3images/diningroom.jpg" class="myimg" width="100%" >
+                    </div>
+                    <div class="col-3  ">
+                        <img src="	https://www.w3schools.com/w3images/bedroom.jpg" class="myimg" width="100%" >
+                    </div>
+                    <div class="col-3 ">
+                        <img src="	https://www.w3schools.com/w3images/livingroom2.jpg" class="myimg" width="100%" >
+                    </div>
+
+                </div>
+                <div>
+                    <p class=" fs-3 m-2  p-2"> The Space </p>
+                    <div class='row m-2 p-2'>
+                        <div class='col-6'>
+                            <div class='m-1 p-2'>
+                                <img src='./Day2/per.png' width="7%">
+                                <span class="fs-5"> Max People : 4</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/bath.png' width="7%">
+                                <span class="fs-5"> Bathrooms : 2</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/bed.png' width="7%">
+                                <span class="fs-5"> Bedrooms : 1</span>
+                            </div>
+                        </div>
+                        <div class='col-6'>
+                            <div class='m-2 p-2'> 
+                                <img src='./Day2/cl.png' width="7%">
+                                <span class="fs-5"> Check In : After 3PM</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/cl.png' width="7%">
+                                <span class="fs-5"> Check Out : 12PM </span>
+                            </div>
+                            
+                        </div>
+                        
+
+                    </div>
+                </div> 
+                <hr>
+                <div>
+                    <p class=" fs-3 m-2 p-2"> Amenities </p>
+                    <div class='row m-2 p-2'>
+                        <div class='col-6'>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/kit.png' width="7%">
+                                <span class="fs-5"> Kitchen</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='shw.png' width="7%">
+                                <span class="fs-5"> Shower</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/wi.png' width="7%">
+                                <span class="fs-5"> Wifi</span>
+                            </div>
+                        </div>
+                        <div class='col-6'>
+                            <div class='m-2 p-2'> 
+                                <img src='./Day2/heat.png' width="7%">
+                                <span class="fs-5"> Heating</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/tv.png' width="7%">
+                                <span class="fs-5"> TV</span>
+                            </div>
+                            <div class='m-2 p-2'>
+                                <img src='./Day2/access.png' width="7%">
+                                <span class="fs-5"> Accessible </span>
+                            </div>
+                            
+                        </div>
+                        
+
+                    </div>
+                </div> 
+                <hr>
+                <div class="row">
+                    <p class=" fs-3 m-2 p-2"> Extra Info </p>
+                    <p class="fs-6 m-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo cumque assumenda repellat numquam iure quam atque aliquam, laborum quo, iusto accusantium illum necessitatibus ut? Alias consequatur aspernatur praesentium ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, tempora, accusantium autem ipsa iusto veniam a totam sed accusamus dolor beatae similique? Illum dolorem exercitationem dolorum consectetur, aspernatur aliquid suscipit!</p>
+                    <div>
+                        <span class="fs-6 m-2"> We accept :</span>
+                        <img src='./Day2/vis.png' width="7%" class="p-1">
+                        <img src='./Day2/ah.png' width="7%" class="p-1">
+                        <img src='./Day2/pay.png' width="7%" class="p-1">
+
+                    </div>
+
+
+                </div><hr>
+
+                <div class="row">
+                    <p class=" fs-3 m-2 p-2"> Rules </p>
+                    <p class="fs-6 m-2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nemo cumque assumenda repellat numquam iure quam atque aliquam, laborum quo, iusto accusantium illum necessitatibus ut? Alias consequatur aspernatur praesentium ex? Lorem ipsum dolor sit amet consectetur adipisicing elit. In, tempora, accusantium autem ipsa iusto veniam a totam sed accusamus dolor beatae similique? Illum dolorem exercitationem dolorum consectetur, aspernatur aliquid suscipit!</p>
+                    <div>
+                        <p class="fs-6 m-2"> Subscribe to receive updates on available dates and special offers.</p>
+                        
+                        <button type="button" class="btn btn-success" style="width: 40%;" data-bs-toggle="modal" data-bs-target="#myModal" > Subscribe </button>
+                        <div class ='modal' id='mymodal'>
+                            <div class='modal-dialog'>
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <p class="fs-3 modal-title"> Subscribe</p>
+                                    </div>
+                                    <div class='modal-body'>
+                                        <p class="fs-4"> Join our mailing list to receive updates on available dates and special offers.</p>
+                                       <form>
+                                        <div class="mb-3">
+                                            <label class="form-label required">Email</label>
+                                            <input type="email" class="form-control">
+                                        </div>
+                                    </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success">Subscribe</button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+
+
+                <div class="row">
+                    <p class=" fs-2 m-2 p-2"> Contact </p>
+
+                    <div class="p-2 m-2">
+                    <div>
+                        <img src="./Day2/loc.png" width="5%" class="p-1">
+                        <span> Chicago, US</span>
+                    </div>
+                    <div>
+                        <img src="./Day2/phone.jpg" width="5%" class="p-1">
+                        <span> 01205457880</span>
+                    </div>
+                    <div>
+                        <img src="./Day2/mail.png" width="5%" class="p-1">
+                        <span> menna.hamouda58@gmail.com</span>
+                    </div>
+                    </div>
+                    <div>
+                        <p class="fs-6 p-2 m-2">Questions? Go ahead, ask them:</p>
+
+                            <div class='p-1 m-1'>
+                                <input class="form-control" type="text" placeholder="Name"  >
+                            </div>
+                            <div class='p-1 m-1'>
+                                <input class="form-control" type="text" placeholder="Email"  >
+                            </div>
+                            <div class='p-1 m-1'>
+                                <input class="form-control" type="text" placeholder="Message"  >
+                            </div>
+
+                        <button type="button" class="btn btn-success" style="width: 40%;" class='p-0 m-0'> Send Message </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        var btn = document.getElementById('showside');
+        $(btn).click(function(){
+            $('#first-col').show();
+        })
+
+    </script>
+    
+</body>
+</html>
